@@ -38,7 +38,8 @@ let s:blue = {"gui": "#00afff", "cterm": 39}
 "let s:yellow = s:colors.yellow
 let s:yellow = {"gui": "#ffff00", "cterm": 11}
 "let s:pink = s:colors.pink
-let s:pink = {"gui": "#ff5fff", "cterm": 207}
+"let s:pink = {"gui": "#ff5fff", "cterm": 207}
+let s:pink = {"gui": "#ff5fff", "cterm": 200}
 "let s:salmon = s:colors.salmon
 let s:salmon = {"gui": "#ff0087", "cterm": 198}
 "let s:purple = s:colors.purple
@@ -127,15 +128,15 @@ call s:hi('Float',          { 'fg': s:salmon })
 call s:hi('Identifier',     { 'fg': s:blue, 'styles': [s:styles.italic] })
 call s:hi('Function',       { 'fg': s:cyan })
 
-call s:hi('Statement',      { 'fg': s:pink, 'styles': [s:styles.italic] })
-call s:hi('Conditional',    { 'fg': s:pink, 'styles': [s:styles.italic] })
-call s:hi('Repeat',         { 'fg': s:pink, 'styles': [s:styles.italic] })
-call s:hi('Label',          { 'fg': s:pink, 'styles': [s:styles.italic] })
+call s:hi('Statement',      { 'fg': s:purple, 'styles': [s:styles.italic] })
+call s:hi('Conditional',    { 'fg': s:purple, 'styles': [s:styles.italic] })
+call s:hi('Repeat',         { 'fg': s:purple, 'styles': [s:styles.italic] })
+call s:hi('Label',          { 'fg': s:purple, 'styles': [s:styles.italic] })
 call s:hi('Operator',       { 'fg': s:white })
 call s:hi('Keyword',        { 'fg': s:purple, 'styles': [s:styles.italic] })
 call s:hi('Exception',      { 'fg': s:purple, 'styles': [s:styles.italic] })
 
-call s:hi('PreProc',        { 'fg': s:pink })
+call s:hi('PreProc',        { 'fg': s:blue })
 call s:hi('Include',        { 'fg': s:pink })
 call s:hi('Define',         { 'fg': s:pink })
 call s:hi('Macro',          { 'fg': s:blue })
